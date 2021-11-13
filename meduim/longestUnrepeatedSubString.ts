@@ -1,21 +1,23 @@
 function lengthOfLongestSubstring(s: string): number {
+    
     let slow =0;
     let fast =0;
     let max = 0;
-    let map = new Map<any, any>();
-
+     
+    let map = new Map();
+     
     while(fast < s.length) {
         if(map.has(s[fast])) {
+             map.delete(s[slow]);
             slow++;
-            map.delete(s[fast]);
-    } else {
+     } else {
         map.set(s[fast], 0);
         max =Math.max(map.size, max);
         fast++;
+     }
     }
-   }
     return max;
 };
 
-lengthOfLongestSubstring("abcabcbb");
+lengthOfLongestSubstring("pwwkew");
 
