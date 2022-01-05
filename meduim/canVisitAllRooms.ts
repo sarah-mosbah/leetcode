@@ -14,5 +14,3 @@ function canVisitAllRooms(rooms: number[][]): boolean {
    return count === rooms.length;
  
  };
-
- /// gogfoulf
