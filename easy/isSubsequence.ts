@@ -13,4 +13,4 @@ function isSubsequence(s: string, t: string): boolean {
   return s.length === pointerB;
 };
 
-// Hello world 
+// Hello world yigog
