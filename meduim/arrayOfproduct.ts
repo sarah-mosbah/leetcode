@@ -22,9 +22,3 @@ export function arrayOfProducts(array: number[]) {
 
 
 
-
-
-
-
-const map = new Map<number, number>();
-if(map.set()
