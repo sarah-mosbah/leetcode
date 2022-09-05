@@ -2,11 +2,11 @@
 remove all the nodes of the linked list that has Node.val == val, and return the new head. */
 
 export class ListNode {
-        val: number
-        next: ListNode | null
-        constructor(val?: number, next?: ListNode | null) {
+        val: number | undefined;
+        next: ListNode | undefined;
+        constructor(val?: number, next?: ListNode | undefined) {
             this.val = val ? 0 : val;
-            this.next = next ? null : next;
+            this.next = next ? undefined : next;
     }
 }
 
